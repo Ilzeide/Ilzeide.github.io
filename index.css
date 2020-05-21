@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*              NAVIGATION              */
+
+nav{
+    justify-content: space-evenly;
+    position: sticky;
+    padding: 0 0; 
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    background-color:#007ACC;
+    top: 0;
+    font-size: 16px;
+    line-height: 0.6;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);
+}
+
+.nav a {
+    display: inline-block;
+    text-transform: capitalize;
+    padding: 20px 10px;
+    color: black;
+    transition: all 0.3s ease 0s;
+}
+
+.nav a:hover {
+    background-color: rgb(214, 234, 247);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/*               TEXT FORMATTING                */
+
+li {
+    line-height: 2.5;
+}
+
+h5 {
+    height: 3em;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    width: auto;
+}
+
+p {
+    width: 700px;
+    height: auto;
+}
+
+.committee p{
+    width: auto;
+    height: auto;
+}
+/*                  IMAGE FORMATTING                */
+
+.roundedbig {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 175px;
+    width: 175px;
+  }
+
+  .roundedsmall {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+  }
+
+.photo {
+     height: inherit;
+     width: 400px;
+     flex: 2;
+}
+
+.text {
+    flex:3;
+    text-align: left;
+}
+
+/*          BLOCKS          */
+
+div {
+    height: 300px;
+} 
+
+div.committee{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: flex-start;
+}
+
+.restofcommittee {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: flex-start;
+}
+
+.bigpicture{
+    display: flex;
+    width: 200px;
+    height: 250px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.smallpictures {
+    display: flex;
+    width: 120px;
+    height: 250px;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.block {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+.block-one {
+    flex-direction: row;
+    height: inherit;
+    justify-content: flex-start;
+    background-color:rgb(160, 207, 238);
+    padding: 40px 50px;
+}
+
+.block-two {
+    flex-direction: row-reverse;
+    height: inherit;
+    justify-content: flex-end;
+    background-color:rgb(214, 234, 247);
+    padding: 40px 50px;
+}
+
+
+
+/*              BODY                */
+
+body {
+    display: block;
+    line-height: 1.5;
+    font-family: Inter,X-LocaleSpecific,sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
